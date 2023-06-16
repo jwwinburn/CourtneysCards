@@ -43,9 +43,9 @@ function Navbar() {
           </a>
         </div>
 
-        <div className="w-4/12 flex justify-center">
+        <div className="btn w-18 flex justify-center">
           <img
-            className="max-h-12"
+            className="max-h-10"
             src="images/JCSG_Logo.png"
             onClick={() => {
               navigate("/");
