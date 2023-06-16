@@ -2,8 +2,8 @@ import React from 'react'
 
 function Carousel() {
   return (
-    <div>
-        <div className="carousel carousel-center rounded-box max-w-full">
+    <div className='flex justify-center mb-24'>
+        <div className="carousel carousel-center rounded-box max-w-7xl">
   <div className="carousel-item">
     <img className='max-w-xs' src="https://cdn.pixabay.com/photo/2021/05/05/00/10/flowers-6229866_1280.jpg" alt="Pizza" />
   </div> 
