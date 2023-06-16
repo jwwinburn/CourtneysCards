@@ -6,7 +6,6 @@ import Carousel from "../Carousel";
 export const Home = () => {
   return (
     <div>
-      <Navbar />
       <Hero />
       <Carousel />
     </div>
