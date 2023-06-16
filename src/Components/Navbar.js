@@ -1,21 +1,56 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 // import logo from "./src/Components/images/JCSG_Logo.png";
 
 function Navbar() {
+  const navigate = useNavigate();
+
   return (
-        <div>
+    <div>
       <div className="navbar bg-primary text-primary-content flex justify-between">
         <div className="w-4/12 flex justify-around">
-          <a className="font-sans btn btn-ghost normal-case text-xl">
+          <a
+            className="font-sans btn btn-ghost normal-case text-xl"
+            onClick={() => {
+              navigate("/occasions");
+            }}
+          >
             Special Occasions
           </a>
-          <a className="btn btn-ghost normal-case text-xl">Holiday</a>
-          <a className="btn btn-ghost normal-case text-xl">Just because</a>
-          <a className="btn btn-ghost normal-case text-xl">Misc</a>
+          <a
+            className="btn btn-ghost normal-case text-xl"
+            onClick={() => {
+              navigate("holiday");
+            }}
+          >
+            Holiday
+          </a>
+          <a
+            className="btn btn-ghost normal-case text-xl"
+            onClick={() => {
+              navigate("justBecause");
+            }}
+          >
+            Just Because
+          </a>
+          <a
+            className="btn btn-ghost normal-case text-xl"
+            onClick={() => {
+              navigate("misc");
+            }}
+          >
+            Misc
+          </a>
         </div>
-        
+
         <div className="w-4/12 flex justify-center">
-          <img className="max-h-12" src="images/JCSG_Logo.png" />
+          <img
+            className="max-h-12"
+            src="images/JCSG_Logo.png"
+            onClick={() => {
+              navigate("/");
+            }}
+          />
         </div>
 
         <div className="w-4/12 flex justify-end pr-5">

@@ -1,12 +1,20 @@
-import logo from "./logo.svg";
-import "./App.css";
-import { Home } from "./Components/home/Home";
+import { Route, Routes } from "react-router-dom";
+import { ApplicationViews } from "./Components/views/ApplicationViews";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <Routes>
+      <Route
+        path="*"
+        element={
+          <>
+            <Navbar />
+            <ApplicationViews />
+          </>
+        }
+      />
+    </Routes>
   );
 }
 
