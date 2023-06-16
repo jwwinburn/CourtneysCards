@@ -1,17 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Components/Navbar';
-import Hero from './Components/Hero';
-import Carousel from './Components/Carousel';
+import logo from "./logo.svg";
+import "./App.css";
+import { Home } from "./Components/home/Home";
 
 function App() {
-  return (
-    <div>
-      <Navbar />      
-      <Hero /> 
-      <Carousel /> 
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
