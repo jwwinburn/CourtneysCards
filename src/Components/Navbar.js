@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div>
       <div className="navbar bg-primary text-primary-content flex justify-between">
-        <div className="flex justify-around">
+        <div className="w-4/12 flex justify-around">
           <a
             className="font-sans btn btn-ghost normal-case text-xl"
             onClick={() => {
@@ -43,9 +43,9 @@ function Navbar() {
           </a>
         </div>
 
-        <div className="max-w-[1rem] flex justify-center">
+        <div className="btn w-18 flex justify-center">
           <img
-            className="max-h-12"
+            className="max-h-10"
             src="images/JCSG_Logo.png"
             onClick={() => {
               navigate("/");
@@ -53,7 +53,7 @@ function Navbar() {
           />
         </div>
 
-        <div className="flex justify-around">
+        <div className="w-4/12 flex justify-end pr-5">
           <input
             type="text"
             placeholder="Search here..."
