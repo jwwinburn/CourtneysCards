@@ -9,7 +9,6 @@ export const Home = () => {
       <Hero />
       <Carousel />
       <MailingList />
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { ApplicationViews } from "./Components/views/ApplicationViews";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <>
             <Navbar />
             <ApplicationViews />
+            <Footer />
           </>
         }
       />
