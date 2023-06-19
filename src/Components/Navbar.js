@@ -6,43 +6,46 @@ function Navbar() {
   const navigate = useNavigate();
 
   return (
+
     <header class="sticky top-0 z-50">
-      <div>
-        <div className="navbar bg-primary text-primary-content flex justify-between">
-          <div className="w-4/12 flex justify-around">
-            <a
-              className="font-sans btn btn-ghost normal-case text-xl"
-              onClick={() => {
-                navigate("/occasions");
-              }}
-            >
-              Special Occasions
-            </a>
-            <a
-              className="btn btn-ghost normal-case text-xl"
-              onClick={() => {
-                navigate("holiday");
-              }}
-            >
-              Holiday
-            </a>
-            <a
-              className="btn btn-ghost normal-case text-xl"
-              onClick={() => {
-                navigate("justBecause");
-              }}
-            >
-              Just Because
-            </a>
-            <a
-              className="btn btn-ghost normal-case text-xl"
-              onClick={() => {
-                navigate("misc");
-              }}
-            >
-              Misc
-            </a>
-          </div>
+    <div>
+      <div className="navbar bg-primary text-primary-content flex justify-between">
+        <div className="w-4/12 flex justify-around">
+          <a
+            className="font-sans font-normal btn btn-ghost normal-case text-xl"
+            onClick={() => {
+              navigate("/occasions");
+            }}
+          >
+            Special Occasions
+          </a>
+          <a
+            className="btn font-normal btn-ghost normal-case text-xl"
+            onClick={() => {
+              navigate("holiday");
+            }}
+          >
+            Holiday
+          </a>
+          <a
+            className="btn font-normal btn-ghost normal-case text-xl"
+            onClick={() => {
+              navigate("justBecause");
+            }}
+          >
+            Just Because
+          </a>
+          <a
+            className="btn font-normal btn-ghost normal-case text-xl"
+            onClick={() => {
+              navigate("misc");
+            }}
+          >
+            Misc
+          </a>
+        </div>
+    
+    
 
           <div
             className="btn w-18 mask mask-circle flex justify-center"
@@ -53,23 +56,47 @@ function Navbar() {
             <img className=" max-h-10" src="images/JCSG_Logo.png" />
           </div>
 
-          <div className="w-4/12 flex justify-end pr-5">
-            <div className="pr-4">
-              <button
-                className="btn btn-ghost"
-                onClick={() => {
-                  navigate("/shoppingcart");
-                }}
+
+        <div className="w-4/12 flex justify-end pr-4">
+          <div>
+            <button
+              className="w-14 h-8 btn btn-ghost"
+              onClick={() => {
+                navigate("signin");
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="mt-1 w-7 h-7"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  className="w-8 h-8"
-                  href="www.google.com"
-                >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div className="pr-4">
+            <button
+              className="w-14 h-8 btn btn-ghost"
+              onClick={() => {
+                navigate("/shoppingcart");
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-8 h-8"
+                href="www.google.com"
+              >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
