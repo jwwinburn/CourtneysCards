@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ProductCard = () => {
+export const Card = () => {
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
@@ -24,4 +24,3 @@ export const ProductCard = () => {
     </div>
   );
 };
-
