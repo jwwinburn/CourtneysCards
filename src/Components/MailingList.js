@@ -17,6 +17,22 @@ export const MailingList = () => {
             placeholder="Type here"
             className="input input-bordered input-primary w-full max-w-xs bg-white"
           />
+
+          <button
+            className="btn bg-primary"
+            onClick={() => window.my_modal_3.showModal()}
+          >
+            Submit Email
+          </button>
+          <dialog id="my_modal_3" className="modal">
+            <form method="dialog" className="modal-box bg-primary">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                ✕
+              </button>
+              <h3 className="font-bold text-lg">Thank You!</h3>
+              <p className="py-4">You have been added to the mailing list.</p>
+            </form>
+          </dialog>
         </div>
       </div>
     </div>
