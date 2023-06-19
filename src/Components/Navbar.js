@@ -43,14 +43,13 @@ function Navbar() {
           </a>
         </div>
 
-        <div className="btn w-18 mask mask-circle flex justify-center">
-          <img
-            className=" max-h-10"
-            src="images/JCSG_Logo.png"
-            onClick={() => {
-              navigate("/");
-            }}
-          />
+        <div
+          className="btn w-18 mask mask-circle flex justify-center"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          <img className=" max-h-10" src="images/JCSG_Logo.png" />
         </div>
 
         <div className="w-4/12 flex justify-end pr-5">
